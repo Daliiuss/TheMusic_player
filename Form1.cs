@@ -57,6 +57,7 @@ namespace TheMusic_player
         
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             ListBox.SelectedObjectCollection selectedItems = new ListBox.SelectedObjectCollection(listBox1);
@@ -70,6 +71,11 @@ namespace TheMusic_player
             {
                 MessageBox.Show("No files selected");
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
