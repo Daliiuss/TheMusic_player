@@ -19,20 +19,23 @@ namespace TheMusic_player
         string[] files, paths;
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                files = openFileDialog1.SafeFileNames; // Save only the names
-                paths = openFileDialog1.FileNames; // Save the full paths
+                // Save only the names
+                files = openFileDialog1.SafeFileNames;
+                // Save the full paths
+                paths = openFileDialog1.FileNames;
+                // Add songs to the listbox
                 for (int i = 0; i < files.Length; i++)
                 {
-                    listBox1.Items.Add(files[i]); // Add songs to the listbox
+                    listBox1.Items.Add(files[i]); 
                 }
             }
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex]; // Play the song  
+            // Play the song  
+            axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex]; 
         }
     }
 }
