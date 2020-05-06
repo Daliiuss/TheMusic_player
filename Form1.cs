@@ -104,6 +104,12 @@ namespace TheMusic_player
         {
             axWindowsMediaPlayer1.Ctlcontrols.stop();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Muzikinių bylų (mp3) grojimo programa (iš nurodyto aplankalo).");
+        }
+
         //list control
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         { 
