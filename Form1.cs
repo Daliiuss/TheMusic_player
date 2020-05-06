@@ -41,13 +41,35 @@ namespace TheMusic_player
         private void button2_Click(object sender, EventArgs e)
         {
             // Play the song 
-            
-            axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex];
+            if (listBox1.SelectedIndex != -1)
+            {
+                axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex];
+            }
+            else
+            {
+                MessageBox.Show("No files selected");
+            }
+
         }
 
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
-            
+        
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListBox.SelectedObjectCollection selectedItems = new ListBox.SelectedObjectCollection(listBox1);
+            selectedItems = listBox1.SelectedItems;
+            if (listBox1.SelectedIndex != -1)
+            {
+                for (int i = selectedItems.Count - 1; i >= 0; i--)
+                    listBox1.Items.Remove(selectedItems[i]);
+            }
+            else
+            {
+                MessageBox.Show("No files selected");
+            }
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
