@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,9 +17,41 @@ namespace TheMusic_player
             InitializeComponent();
         }
         string[] files, paths;
+
+        //FileInfo[] Files = null;
+        //string[] paths = null;
         private void button1_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+
+            
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                listBox1.Text = folderBrowserDialog1.SelectedPath;
+                //DirectoryInfo d = new DirectoryInfo(folderBrowserDialog1.SelectedPath);
+                files = Directory.GetFiles(folderBrowserDialog1.SelectedPath, "*.mp3");
+                paths = files;
+                //Files = d.GetFiles("*.mp3");
+                //paths = d.GetFiles("*.mp3");
+                /*string str = "";
+                string path = "";
+                
+                for(int i =0;i<Files.Count();i++)
+                {
+                    str = str + Files[i].Name;
+                    listBox1.Items.Add(str);
+                    path = path + folderBrowserDialog1.SelectedPath;
+                    paths[i] = path + str;
+                }*/
+                // Save only the names
+                // Save the full paths
+               
+                // Add songs to the listbox
+                for (int i = 0; i < files.Length; i++)
+                {
+                    listBox1.Items.Add(Path.GetFileName(files[i]));
+                }
+            }
+            /*if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 // Save only the names
                 files = openFileDialog1.SafeFileNames;
@@ -29,7 +62,7 @@ namespace TheMusic_player
                 {
                     listBox1.Items.Add(files[i]); 
                 }
-            }
+            }*/
         }
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -40,6 +73,7 @@ namespace TheMusic_player
             if (listBox1.SelectedIndex != -1)
             {
                 axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex];
+                    //paths[listBox1.SelectedIndex];
             }
             else
             {
