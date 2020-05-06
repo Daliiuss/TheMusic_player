@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\bin\Debug\TheMusic_player.exe.config
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\bin\Debug\TheMusic_player.exe
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\bin\Debug\TheMusic_player.pdb
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\bin\Debug\Interop.WMPLib.dll
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.csprojAssemblyReference.cache
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\Interop.WMPLib.dll
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.csproj.ResolveComReference.cache
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.Form1.resources
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.Properties.Resources.resources
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.csproj.GenerateResource.cache
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.exe
+C:\Users\User\source\repos\TheMusic_player\TheMusic_player\obj\Debug\TheMusic_player.pdb
