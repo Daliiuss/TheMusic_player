@@ -32,10 +32,28 @@ namespace TheMusic_player
                 }
             }
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Play the song 
+            
+            axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex];
+        }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Play the song  
-            axWindowsMediaPlayer1.URL = paths[listBox1.SelectedIndex]; 
+            
+           
         }
     }
 }
